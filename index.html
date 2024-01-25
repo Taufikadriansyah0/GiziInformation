@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gizi Information</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+        <div>
+          <h1>INFORMASI GIZI</h1>
+          <p>Selamat Hari Gizi 2024</p>
+        </div>
+        <div class="logo">
+          <img
+            src="assets/image/gizi.png"
+            width="350"
+            alt="Logo Hari Gizi Nasional"
+          />
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#informasi">InfoGizi</a>
+          </li>
+          <li>
+            <div class="dropdown" id="myDropdown">
+              <span onclick="toggleDropdown()">Pilih opsi</span>
+              <div class="dropdown-content">
+                <a href="#fungsi" onclick="selectOption('Funsgi Zat Gizi')"
+                  >Fungsi Zat Gizi</a
+                >
+                <hr />
+                <a href="#ahli" onclick="selectOption('Menurut Ahli')"
+                  >Menurut para Ahli</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Konten artikel -->
+      <div id="content">
+        <article id="home" class="card">
+          <div>
+            <h1>Pengertian Gizi</h1>
+            <p>
+              <strong>Gizi</strong> ialah zat yang terdapat pada makanan yang
+              dibutuhkan oleh organisme untuk pertumbuhan serta perkembangan
+              yang dimanfaatkan langsung oleh tubuh yang meliputi Vitamin,
+              Mineral, Protein, Lemak maupun air.
+              <strong>Zat gizi</strong> diperoleh dari makanan yang didapatkan
+              dalam bentuk sari makanan dari hasil pemecahan pada sistem
+              pencernaan. Zat gizi dibagi menjadi dua yaitu
+              <strong>zat gizi organik dan zat anorganik</strong>. Zat-zat gizi
+              organik seperti lemak, vitamin, Karbohidrat dan protein, sedangkan
+              zat gizi anorganik ialah terdiri dari air dan mineral dan tidak
+              itu saja. Nah apakah kalian sudah mengenal atau pernah mendengar
+              mengenai istilah Gizi? Nah kali ini kami akan membahasnya mengenai
+              apa itu Gizi. Untuk mengetahui ulasan selengkapnya simak
+              pembahasannya dibawah ini.
+            </p>
+          </div>
+        </article>
+
+        <article id="informasi" class="card">
+          <h1>Informasi Gizi</h1>
+          <p>
+            Gizi merujuk pada asupan makanan yang diterima oleh tubuh dan
+            bagaimana tubuh memanfaatkannya untuk pertumbuhan, perkembangan, dan
+            menjaga fungsi normal. Gizi yang baik dan seimbang sangat penting
+            untuk kesehatan dan kesejahteraan seseorang. Gizi yang memadai
+            mencakup asupan nutrisi yang tepat, termasuk karbohidrat, protein,
+            lemak, vitamin, mineral, dan air. Berikut adalah beberapa komponen
+            penting dari gizi:
+          </p>
+          <section>
+            <h3>Karbohidrat</h3>
+            <p>
+              Karbohidrat adalah sumber utama energi untuk tubuh. Makanan kaya
+              karbohidrat meliputi nasi, roti, pasta, buah-buahan, dan sayuran.
+            </p>
+          </section>
+          <section>
+            <h3>Protein</h3>
+            <p>
+              Protein diperlukan untuk pertumbuhan dan perbaikan jaringan tubuh.
+              Sumber protein meliputi daging, ikan, telur, produk susu, dan
+              kacang-kacangan
+            </p>
+          </section>
+          <section>
+            <h3>Lemak</h3>
+            <p>
+              Lemak memberikan energi dan juga penting untuk penyerapan vitamin
+              tertentu. Sumber lemak sehat termasuk minyak zaitun,
+              kacang-kacangan, biji-bijian, dan ikan berlemak
+            </p>
+          </section>
+          <section>
+            <h3>Vitamin</h3>
+            <p>
+              Vitamin adalah senyawa organik yang dibutuhkan dalam jumlah kecil
+              untuk menjaga kesehatan. Beberapa vitamin melibatkan vitamin A, C,
+              D, E, dan K, serta vitamin B kompleks. Sumber vitamin termasuk
+              buah-buahan, sayuran, daging, dan produk susu
+            </p>
+          </section>
+          <section>
+            <h3>Mineral</h3>
+            <p>
+              Mineral, seperti kalsium, besi, seng, dan magnesium, diperlukan
+              untuk fungsi normal tubuh, termasuk pembentukan tulang,
+              pembentukan darah, dan fungsi saraf. Sumber mineral termasuk
+              produk susu, daging, ikan, dan sayuran.
+            </p>
+          </section>
+          <section>
+            <h3>Serat</h3>
+            <p>
+              Serat adalah bagian dari makanan yang tidak dicerna oleh tubuh.
+              Serat membantu menjaga kesehatan saluran pencernaan dan dapat
+              ditemukan dalam buah-buahan, sayuran, dan biji-bijian utuh.
+            </p>
+          </section>
+          <section>
+            <h3>Air</h3>
+            <p>
+              Air sangat penting untuk hidrasi tubuh dan untuk menjaga fungsi
+              normal seperti pencernaan, penyerapan nutrisi, dan suhu tubuh yang
+              tepat.
+            </p>
+          </section>
+          <section>
+            <h3>Kalori</h3>
+            <p>
+              Kalori adalah satuan energi yang diperoleh dari makanan. Jumlah
+              kalori yang dibutuhkan setiap individu bervariasi berdasarkan
+              usia, jenis kelamin, tingkat aktivitas fisik, dan faktor-faktor
+              lainnya
+            </p>
+          </section>
+        </article>
+
+        <article id="fungsi" class="card">
+          <div>
+            <h1>Fungsi Zat Gizi</h1>
+            <ul>
+              <li>Menjadi sumber tenaga atau energi</li>
+              <li>Memperbaiki sel-sel yang rusak</li>
+              <li>Menjadi sumber pertumbuhan & perkembangan</li>
+              <li>Mempertahankan fungsi dari pada organ tubuh</li>
+              <li>Menjaga keseimbangan pada metabolisme</li>
+              <li>
+                Pengatur serta pendukung dari proses
+                <strong>Metabolisme</strong>
+              </li>
+              <li>Dapat membentuk sel-sel pada jaringan tubuh</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- Konten samping -->
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Hari Gizi Nasional</h2>
+            <p>Investasi Masa depanmu dengan gizi</p>
+            <figure>
+              <img class="logo2" src="assets/image/gizi.png" width="300" />
+              <figcaption>Logo Hari Gizi 2024 Kemkes RI</figcaption>
+            </figure>
+          </header>
+        </article>
+        <article id="ahli" class="card kataAhli">
+          <header>
+            <h2>Pengertian Gizi Menurut Pendapat Para Ahli</h2>
+          </header>
+          <ul>
+            <li><strong>Chairinniza K. Graha</strong></li>
+            <p>
+              Gizi ialah suatu unsur yang terkandung di dalam makanan, yang
+              dimana unsur-unsur itu dapat memberikan suatu manfaat bagi tubuh
+              yang ketika mengkonsumsinya dapat menjadi sehat.
+            </p>
+            <li><strong>I Dewa Nyoman Suparisa dkk</strong></li>
+            <p>
+              Gizi yakni suatu proses organisme yang menggunakan makanan yang
+              dimakan atau dikonsumsi secara normal melalui tahapan proses
+              degesti, absorpsi, dan transportasi.
+            </p>
+            <li><strong>Joyce James, Colin Baker, Helen Swain</strong></li>
+            <p>
+              Gizi merupakan komponen kimia dalam makanan yang telah digunakan
+              oleh tubuh sebagai sumber energi dan dapat membantu pertumbuhan,
+              perbaikan, dan membantu perawatan sel-sel tubuh.
+            </p>
+          </ul>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Dibuat dengan Sepenuh <3 Oleh Taufik adriansyah S</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
